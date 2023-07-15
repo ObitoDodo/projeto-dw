@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/home.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="64x64" href="img/favicon.png">
+
+    <title>Página Inicial</title>
+</head>
+<body onLoad="initClock()">
+
+    <div id="timedate">
+        <a id="mon">January</a>
+        <a id="d">1</a>,
+        <a id="y">0</a><br />
+        <a id="h">12</a> :
+        <a id="m">00</a>:
+        <a id="s">00</a>
+    </div>
+
+    <img id="logo" src="img/title.png">
+    <br>
+
+    <nav>
+        <div class="topnav" id="myTopnav">
+            <a class="active"><i class="fa fa-fw fa-home"></i> Página inicial</a>
+            <a href="pages/login.html"><i class="fa fa-user" aria-hidden="true"></i> Login</a>
+            <a href="#news"><i class="fa fa-info" aria-hidden="true"></i> Sobre nós</a>
+            <div class="dropdown">
+              <button class="dropbtn"><i class="fa fa-phone" aria-hidden="true"></i> Contatos 
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">✉ usuario1.teste@gmail.com</a>
+                <a href="#">✉ usuario2.teste@gmail.com</a>
+              </div>
+            </div> 
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+    </nav> 
+
+    <br><br>
+
+    <div class="slider">
+        <div class="slide-track">
+            <div class="slide">
+                <img src="img/biologia_banner.jpg" width="760px" height="400px" alt="" />
+            </div>
+            <div class="slide">
+                <img src="https://static.vecteezy.com/system/resources/previews/007/168/305/original/realistic-math-chalkboard-background-illustration-free-vector.jpg" width="760px" height="400px" alt="" />
+            </div>
+            <div class="slide">
+                <img src="https://img.freepik.com/vetores-gratis/fundo-de-educacao-cientifica-de-mao-desenhada_23-2148483354.jpg" width="760px" height="400px" alt="" />
+            </div>
+            <div class="slide">
+                <img src="https://clickgeo.com.br/wp-content/uploads/2013/04/wallpaper-1210239.jpg" width="760px" height="400px" alt="" />
+            </div>
+            <div class="slide">
+                <img src="https://jures.com.br/wp-content/uploads/2021/03/Hist%C3%B3ria-presidentes-militares.jpg" width="760px" height="400px" alt="" />
+            </div>
+            <div class="slide">
+                <img src="https://i.pinimg.com/originals/cd/76/d7/cd76d793c30eb1d8afdb9193ce0b8984.jpg" width="760px" height="400px" alt="" />
+            </div>
+            <div class="slide">
+                <img src="https://img.freepik.com/fotos-premium/desenhado-a-mao-formulas-cientificas-no-quadro-negro-para-o-fundo_387864-4956.jpg" width="760px" height="400px" alt="" />
+            </div>
+            <div class="slide">
+                <img src="img/biologia.jpg" width="500" height="400px" alt="" />
+            </div>
+            <div class="slide">
+                <img src="img/ciencias.jpg" width="500" height="400px" alt="" />
+            </div>
+            <div class="slide">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" width="760px" height="400px" alt="" />
+            </div>
+            <div class="slide">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" width="760px" height="400px" alt="" />
+            </div>
+            <div class="slide">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" width="760px" height="400px" alt="" />
+            </div>
+            <div class="slide">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" width="760px" height="400px" alt="" />
+            </div>
+            <div class="slide">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" width="760px" height="400px" alt="" />
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+
+    <header>
+        <h1 style="text-align: center; max-width: 1200px; margin: auto; font-size: 60px; background-color: #333; border-radius: 100%; color: white;">Pesquisa</h1>
+    </header>
+
+    <br><br>
+
+    <div class="row">
+        <div class="left" style="background-color:#bbb;">
+          <h2>Menu</h2>
+          <input type="text" id="mySearch" onkeyup="SearchMenu()" placeholder="Pesquisar.." title="Digite uma categoria">
+          <ul id="myMenu">
+
+            <li><a id="html" data-value="HTML (Linguagem de Marcação de HiperTexto) é o bloco de construção mais básico da web. Define o significado e a estrutura do conteúdo da web. Outras tecnologias além do HTML geralmente são usadas para descrever a aparência/apresentação (CSS) ou a funcionalidade/comportamento (JavaScript) de uma página da web." data-value2 = "HTML" data-value3="../pages/html.html" onclick="Text('html')">HTML</a></li>
+
+            <li><a id="css" data-value="Cascading Style Sheets é um mecanismo para adicionar estilos a uma página web, aplicado diretamente nas tags HTML ou ficar contido dentro das tags &lt; style &gt;. Também é possível, adicionar estilos adicionando um link para um arquivo CSS que contém os estilos." data-value2="CSS" data-value3="../pages/css.html" onclick="Text('css')">CSS</a></li>
+
+            <li><a id="js" data-value="JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma. Juntamente com HTML e CSS, o JavaScript é uma das três principais tecnologias da World Wide Web." data-value2="JavaScript" data-value3="../pages/js.html" onclick="Text('js')">JavaScript</a></li>
+
+            <li><a id="php" data-value="PHP é uma linguagem interpretada livre, usada originalmente apenas para o desenvolvimento de aplicações presentes e atuantes no lado do servidor, capazes de gerar conteúdo dinâmico na World Wide Web." data-value2="PHP" data-value3="../pages/php.html" onclick="Text('php')">PHP</a></li>
+
+            <li><a id="python" data-value="Python é uma linguagem de programação de alto nível, interpretada de script, imperativa, orientada a objetos, funcional, de tipagem dinâmica e forte. Foi lançada por Guido van Rossum em 1991." data-value2="Python" data-value3="../pages/python.html" onclick="Text('python')">Python</a></li>
+            <li><a>jQuery</a></li>
+            <li><a>SQL</a></li>
+            <li><a>Bootstrap</a></li>
+            <li><a>Node.js</a></li>
+          </ul>
+        </div>
+        
+        <div class="right" style="background-color:#ddd;">
+          <h2 id="title">Conteúdo</h2>
+          <p id="content"></p>
+          <a id="link" href="#"></a>
+        </div>
+      </div>
+
+      <br><br>
+
+
+</body>
+
+<script src="src/main.js"></script>
+</html>
